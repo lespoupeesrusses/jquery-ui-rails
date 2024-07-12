@@ -1,20 +1,17 @@
-//= require jquery-ui/version
-//= require jquery-ui/effect
-
 /*!
- * jQuery UI Effects Highlight 1.13.0
- * http://jqueryui.com
+ * jQuery UI Effects Highlight @VERSION
+ * https://jqueryui.com
  *
- * Copyright jQuery Foundation and other contributors
+ * Copyright OpenJS Foundation and other contributors
  * Released under the MIT license.
- * http://jquery.org/license
+ * https://jquery.org/license
  */
 
 //>>label: Highlight Effect
 //>>group: Effects
 //>>description: Highlights the background of an element in a defined color for a custom duration.
-//>>docs: http://api.jqueryui.com/highlight-effect/
-//>>demos: http://jqueryui.com/effect/
+//>>docs: https://api.jqueryui.com/highlight-effect/
+//>>demos: https://jqueryui.com/effect/
 
 ( function( factory ) {
 	"use strict";

@@ -1,22 +1,17 @@
-//= require jquery-ui/widgets/controlgroup
-//= require jquery-ui/widgets/checkboxradio
-//= require jquery-ui/keycode
-//= require jquery-ui/widget
-
 /*!
- * jQuery UI Button 1.13.0
- * http://jqueryui.com
+ * jQuery UI Button @VERSION
+ * https://jqueryui.com
  *
- * Copyright jQuery Foundation and other contributors
+ * Copyright OpenJS Foundation and other contributors
  * Released under the MIT license.
- * http://jquery.org/license
+ * https://jquery.org/license
  */
 
 //>>label: Button
 //>>group: Widgets
 //>>description: Enhances a form with themeable buttons.
-//>>docs: http://api.jqueryui.com/button/
-//>>demos: http://jqueryui.com/button/
+//>>docs: https://api.jqueryui.com/button/
+//>>demos: https://jqueryui.com/button/
 //>>css.structure: ../../themes/base/core.css
 //>>css.structure: ../../themes/base/button.css
 //>>css.theme: ../../themes/base/theme.css
@@ -47,7 +42,7 @@
 "use strict";
 
 $.widget( "ui.button", {
-	version: "1.13.0",
+	version: "@VERSION",
 	defaultElement: "<button>",
 	options: {
 		classes: {
@@ -114,9 +109,9 @@ $.widget( "ui.button", {
 					if ( event.keyCode === $.ui.keyCode.SPACE ) {
 						event.preventDefault();
 
-						// Support: PhantomJS <= 1.9, IE 8 Only
-						// If a native click is available use it so we actually cause navigation
-						// otherwise just trigger a click event
+						// If a native click is available use it, so we
+						// actually cause navigation. Otherwise, just trigger
+						// a click event.
 						if ( this.element[ 0 ].click ) {
 							this.element[ 0 ].click();
 						} else {
@@ -292,7 +287,7 @@ $.widget( "ui.button", {
 } );
 
 // DEPRECATED
-if ( $.uiBackCompat !== false ) {
+if ( $.uiBackCompat === true ) {
 
 	// Text and Icons options
 	$.widget( "ui.button", $.ui.button, {

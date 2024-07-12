@@ -1,20 +1,17 @@
-//= require jquery-ui/version
-//= require jquery-ui/effect
-
 /*!
- * jQuery UI Effects Drop 1.13.0
- * http://jqueryui.com
+ * jQuery UI Effects Drop @VERSION
+ * https://jqueryui.com
  *
- * Copyright jQuery Foundation and other contributors
+ * Copyright OpenJS Foundation and other contributors
  * Released under the MIT license.
- * http://jquery.org/license
+ * https://jquery.org/license
  */
 
 //>>label: Drop Effect
 //>>group: Effects
 //>>description: Moves an element in one direction and hides it at the same time.
-//>>docs: http://api.jqueryui.com/drop-effect/
-//>>demos: http://jqueryui.com/effect/
+//>>docs: https://api.jqueryui.com/drop-effect/
+//>>demos: https://jqueryui.com/effect/
 
 ( function( factory ) {
 	"use strict";

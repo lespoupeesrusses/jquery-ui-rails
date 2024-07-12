@@ -1,5 +1,3 @@
-//= require jquery-ui/version
-
 ( function( factory ) {
 	"use strict";
 

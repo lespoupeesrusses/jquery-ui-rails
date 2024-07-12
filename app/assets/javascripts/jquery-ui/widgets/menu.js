@@ -1,24 +1,17 @@
-//= require jquery-ui/keycode
-//= require jquery-ui/position
-//= require jquery-ui/safe-active-element
-//= require jquery-ui/unique-id
-//= require jquery-ui/version
-//= require jquery-ui/widget
-
 /*!
- * jQuery UI Menu 1.13.0
- * http://jqueryui.com
+ * jQuery UI Menu @VERSION
+ * https://jqueryui.com
  *
- * Copyright jQuery Foundation and other contributors
+ * Copyright OpenJS Foundation and other contributors
  * Released under the MIT license.
- * http://jquery.org/license
+ * https://jquery.org/license
  */
 
 //>>label: Menu
 //>>group: Widgets
 //>>description: Creates nestable menus.
-//>>docs: http://api.jqueryui.com/menu/
-//>>demos: http://jqueryui.com/menu/
+//>>docs: https://api.jqueryui.com/menu/
+//>>demos: https://jqueryui.com/menu/
 //>>css.structure: ../../themes/base/core.css
 //>>css.structure: ../../themes/base/menu.css
 //>>css.theme: ../../themes/base/theme.css
@@ -33,7 +26,6 @@
 			"jquery",
 			"../keycode",
 			"../position",
-			"../safe-active-element",
 			"../unique-id",
 			"../version",
 			"../widget"
@@ -47,7 +39,7 @@
 "use strict";
 
 return $.widget( "ui.menu", {
-	version: "1.13.0",
+	version: "@VERSION",
 	defaultElement: "<ul>",
 	delay: 300,
 	options: {
@@ -94,7 +86,7 @@ return $.widget( "ui.menu", {
 			},
 			"click .ui-menu-item": function( event ) {
 				var target = $( event.target );
-				var active = $( $.ui.safeActiveElement( this.document[ 0 ] ) );
+				var active = $( this.document[ 0 ].activeElement );
 				if ( !this.mouseHandled && target.not( ".ui-state-disabled" ).length ) {
 					this.select( event );
 
@@ -138,7 +130,7 @@ return $.widget( "ui.menu", {
 				this._delay( function() {
 					var notContained = !$.contains(
 						this.element[ 0 ],
-						$.ui.safeActiveElement( this.document[ 0 ] )
+						this.document[ 0 ].activeElement
 					);
 					if ( notContained ) {
 						this.collapseAll( event );

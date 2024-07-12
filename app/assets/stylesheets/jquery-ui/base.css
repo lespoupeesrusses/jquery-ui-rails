@@ -1,32 +1,30 @@
 /*!
- * jQuery UI CSS Framework 1.13.0
- * http://jqueryui.com
+ * jQuery UI CSS Framework @VERSION
+ * https://jqueryui.com
  *
- * Copyright jQuery Foundation and other contributors
+ * Copyright OpenJS Foundation and other contributors
  * Released under the MIT license.
- * http://jquery.org/license
+ * https://jquery.org/license
  *
- * http://api.jqueryui.com/category/theming/
+ * https://api.jqueryui.com/category/theming/
  */
-/*
- *= require jquery-ui/core
+@import url("core.css");
 
- *= require jquery-ui/accordion
- *= require jquery-ui/autocomplete
- *= require jquery-ui/button
- *= require jquery-ui/checkboxradio
- *= require jquery-ui/controlgroup
- *= require jquery-ui/datepicker
- *= require jquery-ui/dialog
- *= require jquery-ui/draggable
- *= require jquery-ui/menu
- *= require jquery-ui/progressbar
- *= require jquery-ui/resizable
- *= require jquery-ui/selectable
- *= require jquery-ui/selectmenu
- *= require jquery-ui/sortable
- *= require jquery-ui/slider
- *= require jquery-ui/spinner
- *= require jquery-ui/tabs
- *= require jquery-ui/tooltip
- */
+@import url("accordion.css");
+@import url("autocomplete.css");
+@import url("button.css");
+@import url("checkboxradio.css");
+@import url("controlgroup.css");
+@import url("datepicker.css");
+@import url("dialog.css");
+@import url("draggable.css");
+@import url("menu.css");
+@import url("progressbar.css");
+@import url("resizable.css");
+@import url("selectable.css");
+@import url("selectmenu.css");
+@import url("sortable.css");
+@import url("slider.css");
+@import url("spinner.css");
+@import url("tabs.css");
+@import url("tooltip.css");

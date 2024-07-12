@@ -1,21 +1,17 @@
-//= require jquery-ui/widgets/mouse
-//= require jquery-ui/version
-//= require jquery-ui/widget
-
 /*!
- * jQuery UI Selectable 1.13.0
- * http://jqueryui.com
+ * jQuery UI Selectable @VERSION
+ * https://jqueryui.com
  *
- * Copyright jQuery Foundation and other contributors
+ * Copyright OpenJS Foundation and other contributors
  * Released under the MIT license.
- * http://jquery.org/license
+ * https://jquery.org/license
  */
 
 //>>label: Selectable
 //>>group: Interactions
 //>>description: Allows groups of elements to be selected with the mouse.
-//>>docs: http://api.jqueryui.com/selectable/
-//>>demos: http://jqueryui.com/selectable/
+//>>docs: https://api.jqueryui.com/selectable/
+//>>demos: https://jqueryui.com/selectable/
 //>>css.structure: ../../themes/base/selectable.css
 
 ( function( factory ) {
@@ -39,7 +35,7 @@
 "use strict";
 
 return $.widget( "ui.selectable", $.ui.mouse, {
-	version: "1.13.0",
+	version: "@VERSION",
 	options: {
 		appendTo: "body",
 		autoRefresh: true,
